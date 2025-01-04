@@ -27,6 +27,13 @@ class homepage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title: Text(""),
+        actions: <Widget>[
+          Container(
+            margin: EdgeInsets.only(right: 20),
+            child: Icon(Icons.account_circle_rounded),
+          ),
+          
+        ],
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -242,6 +249,219 @@ class homepage extends StatelessWidget{
             ),
 
 
+
+
+
+
+            //judul
+            Container(
+              margin: EdgeInsets.only(top: 20, bottom: 20),
+              child: Text("ANIMATIONS", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 25)),
+            ),
+
+
+
+
+
+
+          //widget 3
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+
+                  // card 1
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: InkWell(
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => learnImage()),
+                        );
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            
+                            Card(
+                              elevation: 0,
+                              color:Colors.white,
+                              child: Container(
+                                child: CircleAvatar(
+                                  radius: 50,
+                                  backgroundImage: AssetImage("assets/images/jswallpaper.jpg"),
+                                ), 
+                                
+                                //Image.asset('assets/images/jswallpaper.jpg', width: 100, height: 100, fit: BoxFit.cover),
+                              ),
+                            ),
+
+                            Center(
+                              child: Text("Image"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  //card 2
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: InkWell(
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => learnButton()),
+                        );
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            
+                            Card(
+                              color: Colors.white,
+                              elevation: 0,
+                              child: Container(
+                                child: CircleAvatar(
+                                  radius: 50,
+                                  backgroundImage: AssetImage("assets/images/jswallpaper.jpg"),
+                                ), 
+                                
+                                //Image.asset('assets/images/jswallpaper.jpg', width: 100, height: 100, fit: BoxFit.cover),
+                              ),
+                            ),
+
+                            Center(
+                              child: Text("Button"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+
+                ],
+              ),
+            ),
+
+
+
+
+
+            //widget 4
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+
+                  // card 1
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: InkWell(
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => learnImage()),
+                        );
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            
+                            Card(
+                              elevation: 0,
+                              color:Colors.white,
+                              child: Container(
+                                child: CircleAvatar(
+                                  radius: 50,
+                                  backgroundImage: AssetImage("assets/images/jswallpaper.jpg"),
+                                ), 
+                                
+                                //Image.asset('assets/images/jswallpaper.jpg', width: 100, height: 100, fit: BoxFit.cover),
+                              ),
+                            ),
+
+                            Center(
+                              child: Text("Image"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  //card 2
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: InkWell(
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => learnButton()),
+                        );
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            
+                            Card(
+                              color: Colors.white,
+                              elevation: 0,
+                              child: Container(
+                                child: CircleAvatar(
+                                  radius: 50,
+                                  backgroundImage: AssetImage("assets/images/jswallpaper.jpg"),
+                                ), 
+                                
+                                //Image.asset('assets/images/jswallpaper.jpg', width: 100, height: 100, fit: BoxFit.cover),
+                              ),
+                            ),
+
+                            Center(
+                              child: Text("Button"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+
+                ],
+              ),
+            ),
+
+
+
+          Container(
+            child: Divider(
+              thickness: 2,
+              indent: 20,
+              endIndent: 20,
+              color: Colors.grey,
+            ),
+          ),
+
+
+
+
+
+
+
+
+
+
+
+
+          //divider space
+          Container(
+            margin: EdgeInsets.only(top: 30, bottom: 30),
+            child: Divider(
+              thickness: 2,
+              color: Colors.white,
+            ),
+          ),
 
 
             
